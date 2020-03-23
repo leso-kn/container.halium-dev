@@ -7,4 +7,7 @@ RUN dpkg --add-architecture i386 && \
                    libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
                    libgl1-mesa-dev g++-multilib mingw-w64-i686-dev tofrodos \
                    python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
-                   repo liblz4-tool bc lzop imagemagick libncurses5 rsync bsdmainutils python3 \
+                   repo liblz4-tool bc lzop imagemagick libncurses5 rsync bsdmainutils python3
+
+RUN curl https://storage.googleapis.com/git-repo-downloads/repo > \
+         /usr/bin/repo
